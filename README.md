@@ -4,13 +4,14 @@ Projeto TechMan desenvolvido para cadastro, exclusão e atualização de equipam
 
 ## Wireframes e Diagramas
 
-![MerDer](./DOCS/MerDer.drawio.png)
+![MerDer](./Docs/MerDer.jpg)
 
 Principais telas 
 
-![Wireframe01](./DOCS/wireframes/Wireframe01.png)
-![Wireframe02](./DOCS/wireframes/Wireframe02.png)
-![Wireframe03](./DOCS/wireframes/Wireframe03.png)
+![Wireframe01](./Docs/wireframe/Tela_admin.png)
+![Wireframe02](./Docs/wireframe/comentario.png)
+![Wireframe03](./Docs/wireframe/excluir.png)
+![Wireframe03](./Docs/wireframe/equipamento.png)
 
 
 ## Como testar 
