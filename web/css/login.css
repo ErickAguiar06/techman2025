@@ -1,0 +1,72 @@
+body {
+      background: #d9f2f4;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header .logo img {
+      margin: 20px;
+      height: 70px;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 320px;
+    }
+
+    .senha-display {
+      font-size: 24px;
+      letter-spacing: 8px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      padding: 10px;
+      height: 30px;
+    }
+
+    .teclado {
+      display: grid;
+      grid-template-columns: repeat(3, 80px);
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .tecla {
+      background: transparent;
+      border: 2px solid #30b6c5;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      font-size: 22px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tecla:hover {
+      background: #30b6c5;
+      color: #fff;
+    }
+
+    .tecla.entrar {
+      background: #30b6c5;
+      color: #fff;
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    .tecla.entrar.ativo {
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    .erro {
+      color: red;
+      font-weight: bold;
+      margin-top: 10px;
+      display: none;
+    }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listagem de Equipamentos</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/assets/techman.png" alt="TechMan Logo" />
+    </div>
+    <a href="#" class="novo-equipamento" id="novoEquipamento" style="display: none;">
+      <i class="fa fa-plus"></i> Novo equipamento
+    </a>
+    <a href="#" class="sair" id="sair"> 
+      <i class="fa fa-sign-out-alt"></i> Sair
+    </a>
+  </header>
+
+  <main id="equipamentos"></main>
+
+  <div id="modalExcluir" class="modal">
+    <div class="modal-content">
+      <h2>Exclusão de equipamento</h2>
+      <p>Tem certeza que deseja excluir o equipamento? Essa ação não poderá ser desfeita.</p>
+      <button id="confirmarExclusao">Excluir</button>
+      <button id="cancelarExclusao">Cancelar</button>
+    </div>
+  </div>
+
+  <div id="modalComentarios" class="modal">
+    <div class="modal-content">
+      <h2>Comentários</h2>
+      <div id="comentariosList"></div> 
+      <textarea id="novoComentario" placeholder="Adicione um comentário..."></textarea>
+      <div id="previewComentario" style="margin-top: 10px; font-style: italic; color: #666;"></div>  
+      <button id="adicionarComentario">Adicionar comentário</button>
+      <button id="fecharComentarios">Fechar</button>
+    </div>
+  </div>
+
+  <div id="modalCadastroEquipamento" class="modal">
+    <div class="modal-content">
+      <h2>Cadastro de equipamento</h2>
+      <input type="text" id="nomeEquipamento" placeholder="Nome do equipamento" />
+      <input type="text" id="imagemEquipamento" placeholder="Endereço da imagem (ex: https://... ou /assets/...) " />
+      <textarea id="descricaoEquipamento" placeholder="Descrição do equipamento"></textarea>
+      <label for="ativoEquipamento">
+        <input type="checkbox" id="ativoEquipamento" checked /> Ativo  
+      </label>
+      <button id="cadastrarEquipamento">Cadastrar</button>
+      <button id="fecharCadastro">Fechar</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
